@@ -12,7 +12,7 @@
 #include "Constants.h"
 using namespace std;
 
-const int N = 1000, FEV_LS1_budget = 25000, FEV_global = 3e6, krantost = FEV_global/100, R = 3,
+const int N = 1000, FEV_LS1_budget = 25000, FEV_global = 3e6, krantost = FEV_global/100, R = 25,
           generations_min = 5, generations_init = 20, pop_size_min = 25, pop_size_init = 100, pop_size_max = 200;
 int ID, M, max_CC;
 double a = -100.0, b = 100.0, best_solution = 1e300, THE_BEST_solution = 1e300, THE_GLOBAL_BEST_solution = 1e300;
