@@ -28,13 +28,8 @@ This programming code works using the MPICH2 framework. Information about instal
 192.168.1.81:16 #slave6
 192.168.1.118:16 #slave7
 ```
-In our case, we have eight PC
 
 We use "perform.sh" file to run compiled program.
 ```
 mpirun -np 128 --hostfile hostfile ./COSACC-LS1
 ```
-
-
-
-
