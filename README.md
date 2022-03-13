@@ -8,8 +8,8 @@ generations_init = 20; // the number of initial generations for all CC-based alg
 pop_size_min = 25; // the minimum number of individuals
 pop_size_init = 100; // the initial number of individuals
 pop_size_max = 200; // the maximum number of individuals
-FEV_LS1_budget = 25000; // the number of fitness evaluations 
-island_setup [8][3] = //
+FEV_LS1_budget = 25000; // the number of fitness evaluations for MTS-LS1
+island_setup [8][3] = // settings of COSACC for computational cluster
 {
     {1,2,4}, {1,2,8}, {1,2,10}, {1,4,8}, {1,4,10}, {1,8,10}, {2,4,8}, {2,4,10}
 };
