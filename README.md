@@ -18,14 +18,14 @@ island_setup [8][3] = // different settings of COSACC for numerical experiment
 This programming code works using the MPICH2 framework. Information about installation of MPICH2 can be found in this [web site](https://mpitutorial.com/tutorials/installing-mpich2/). The "hostfile" contains information about PC-slaves in our local network, their IP-addresses and the number of computational threads.
 
 ```
-192.168.1.110:16 #master
-192.168.1.35:16 #slave1
-192.168.1.39:16 #slave2
-192.168.1.45:16 #slave3
-192.168.1.99:16 #slave4
-192.168.1.50:16 #slave5
-192.168.1.81:16 #slave6
-192.168.1.118:16 #slave7
+192.168.1.110:16    #master
+192.168.1.35:16     #slave1
+192.168.1.39:16     #slave2
+192.168.1.45:16     #slave3
+192.168.1.99:16     #slave4
+192.168.1.50:16     #slave5
+192.168.1.81:16     #slave6
+192.168.1.118:16    #slave7
 ```
 
 We use "perform.sh" file to run the compiled program.
