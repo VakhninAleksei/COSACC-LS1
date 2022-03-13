@@ -16,7 +16,7 @@ island_setup [8][3] = // settings of COSACC for computational cluster
 ```
 
 # MPICH2
-This programming code works using the MPICH2 framework. Information about installation of MPICH2 can be found in this [web site](https://mpitutorial.com/tutorials/installing-mpich2/). The "hostfile" contains information about PC-slaves in our local network, their IP-addresses and the number of computational threads we will use. 
+This programming code works using the MPICH2 framework. Information about installation of MPICH2 can be found in this [web site](https://mpitutorial.com/tutorials/installing-mpich2/). The "hostfile" contains information about PC-slaves in our local network, their IP-addresses and the number of computational threads.
 
 ```
 192.168.1.110:16 #master
