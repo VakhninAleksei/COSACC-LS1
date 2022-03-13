@@ -2,7 +2,7 @@
 This program code implements the Coordination of Self-adaptive Cooperative Coevolution algorithms with Local Search (COSACC-LS1) algorithm for solving large-scale global optimization problems. The proposed self-adaptation method tunes both the structure of the complete approach and the parameters of each algorithm in the cooperation. The SHADE algorithm is used as a subcomponent optimizer of the CC-based algorithms. Multiple Trajectory Search (MTS-LS1) uses as a local search algorithm. The problems are presented as the benchmark set (LSGO CEC'2013). We use the MPICH2 framework to implement parallel numerical experiments on our computing cluster.
 
 # COSACC-LS1 settings
-The main settings of COSACC-LS1 are the next:
+The main settings of COSACC-LS1 are:
 ```
 generations_init = 20; // the number of initial generations for all CC-based algorithms
 pop_size_min = 25; // the minimum number of individuals
