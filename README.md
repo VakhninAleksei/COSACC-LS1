@@ -1,9 +1,22 @@
-# Coordination of Self-adaptive Cooperative Coevolution algorithms with Local Search
+# Coordination of Self-adaptive Cooperative Coevolution algorithms with Local Search (COSACC-LS1)
 This program code implements the Coordination of Self-adaptive Cooperative Coevolution algorithms with Local Search (COSACC-LS1) algorithm for solving large-scale global optimization problems. The proposed self-adaptation method tunes both the structure of the complete approach and the parameters of each algorithm in the cooperation. The SHADE algorithm is used as a subcomponent optimizer of the CC-based algorithms. Multiple Trajectory Search (MTS-LS1) uses as a local search algorithm. The problems are presented as the benchmark set (LSGO CEC'2013). We use the MPICH2 framework to implement parallel numerical experiments on our computing cluster.
+
+# COSACC-LS1 settings
+The main setting of COSACC-LS1 is the next:
+```
+generations_init = 20; // the number of initial generations for all CC-based algorithms
+pop_size_min = 25; // the minimum number of individuals
+pop_size_init = 100; // the minimum number of individuals
+pop_size_max = 200; // the minimum number of individuals
+FEV_LS1_budget = 25000; // the number of fitness evaluations 
+island_setup [8][3] =
+{
+    {1,2,4}, {1,2,8}, {1,2,10}, {1,4,8}, {1,4,10}, {1,8,10}, {2,4,8}, {2,4,10}
+};
+```
 
 # MPICH2
 This programming code works using the MPICH2 framework. Information about intallation of MPICH2 can be found in this [web site](https://mpitutorial.com/tutorials/installing-mpich2/). The "hostfile" contains information about PC-slaves in out local network, thair IP-addresses and how many computational thread we will use. 
-
 
 ```
 192.168.1.110:16 #master
@@ -21,3 +34,7 @@ We use "perform.sh" file to run compiled program.
 ```
 mpirun -np 128 --hostfile hostfile ./COSACC-LS1
 ```
+
+
+
+
