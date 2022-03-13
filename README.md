@@ -6,7 +6,7 @@ The main settings of COSACC-LS1 are:
 ```
 generations_init = 20; // the number of initial generations for all CC-based algorithms
 pop_size_min = 25; // the minimum number of individuals
-pop_size_init = 100; // the minimum number of individuals
+pop_size_init = 100; // the initial number of individuals
 pop_size_max = 200; // the minimum number of individuals
 FEV_LS1_budget = 25000; // the number of fitness evaluations 
 island_setup [8][3] =
