@@ -9,14 +9,14 @@ pop_size_min = 25; // the minimum number of individuals
 pop_size_init = 100; // the initial number of individuals
 pop_size_max = 200; // the minimum number of individuals
 FEV_LS1_budget = 25000; // the number of fitness evaluations 
-island_setup [8][3] =
+island_setup [8][3] = //
 {
     {1,2,4}, {1,2,8}, {1,2,10}, {1,4,8}, {1,4,10}, {1,8,10}, {2,4,8}, {2,4,10}
 };
 ```
 
 # MPICH2
-This programming code works using the MPICH2 framework. Information about installation of MPICH2 can be found in this [web site](https://mpitutorial.com/tutorials/installing-mpich2/). The "hostfile" contains information about PC-slaves in out local network, thair IP-addresses and how many computational thread we will use. 
+This programming code works using the MPICH2 framework. Information about installation of MPICH2 can be found in this [web site](https://mpitutorial.com/tutorials/installing-mpich2/). The "hostfile" contains information about PC-slaves in our local network, their IP-addresses and how many computational thread we will use. 
 
 ```
 192.168.1.110:16 #master
