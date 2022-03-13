@@ -7,7 +7,7 @@ The main settings of COSACC-LS1 are:
 generations_init = 20; // the number of initial generations for all CC-based algorithms
 pop_size_min = 25; // the minimum number of individuals
 pop_size_init = 100; // the initial number of individuals
-pop_size_max = 200; // the minimum number of individuals
+pop_size_max = 200; // the maximum number of individuals
 FEV_LS1_budget = 25000; // the number of fitness evaluations 
 island_setup [8][3] = //
 {
@@ -16,7 +16,7 @@ island_setup [8][3] = //
 ```
 
 # MPICH2
-This programming code works using the MPICH2 framework. Information about installation of MPICH2 can be found in this [web site](https://mpitutorial.com/tutorials/installing-mpich2/). The "hostfile" contains information about PC-slaves in our local network, their IP-addresses and how many computational threads we will use. 
+This programming code works using the MPICH2 framework. Information about installation of MPICH2 can be found in this [web site](https://mpitutorial.com/tutorials/installing-mpich2/). The "hostfile" contains information about PC-slaves in our local network, their IP-addresses and the number of computational threads we will use. 
 
 ```
 192.168.1.110:16 #master
@@ -29,7 +29,7 @@ This programming code works using the MPICH2 framework. Information about instal
 192.168.1.118:16 #slave7
 ```
 
-We use "perform.sh" file to run compiled program.
+We use "perform.sh" file to run the compiled program.
 ```
 mpirun -np 128 --hostfile hostfile ./COSACC-LS1
 ```
