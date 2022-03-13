@@ -3,7 +3,8 @@ This program code implements the Coordination of Self-adaptive Cooperative Coevo
 
 # COSACC-LS1 settings
 The main settings of COSACC-LS1 are:
-```
+```c++
+generations_min = 5; // the minimum number of generations for all CC-based algorithms
 generations_init = 20; // the number of initial generations for all CC-based algorithms
 pop_size_min = 25; // the minimum number of individuals
 pop_size_init = 100; // the initial number of individuals
